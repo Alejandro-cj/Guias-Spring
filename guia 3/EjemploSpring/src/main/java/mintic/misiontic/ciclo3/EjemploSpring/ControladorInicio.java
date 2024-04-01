@@ -5,6 +5,7 @@
 package mintic.misiontic.ciclo3.EjemploSpring;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,11 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Alejandro
  */
 @RestController
-@slf4j
+@Slf4j
 public class ControladorInicio {
     @GetMapping("/")
     
     public String inicio(){
-    return "Este es el inicio";
+        log.info("ejecutando el controlador");
+    return "Este es el inicio v2";
     }
 }
