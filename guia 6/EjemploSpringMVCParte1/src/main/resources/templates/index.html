@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>PAGINA DE INICIO</h2>
+        <p th:text="${mensaje}"></p>
+        <p th:text="${dato}"></p>
+        <hr><!-- comment -->
+        <<b>CEDULA</b><<span th:text="${alguien.cedula}">text</span>
+        <<b>CLAVE</b><<span th:text="${alguien.clave}">text</span>
+        <<b>NOMBRE</b><<span th:text="${alguin.nombre}">text</span>
+        <<b>EMAIL</b><<span th:text="${alguien.email}">text</span>
+
+    </body>
+</html>
